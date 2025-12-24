@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 15px;
+  padding: 30px;
+}
+
+.features div {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.plans {
+  padding: 40px 20px;
+}
+
+.plans .card {
+  background: #020617;
+  margin: 15px auto;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 300px;
+  border: 1px solid #1e293b;
+}
+
+.plans .premium {
+  box-shadow: 0 0 20px rgba(56,189,248,.3);
+}
+
+.how, .contact {
+  padding: 40px 20px;
+}
+
+ol {
+  text-align: right;
+  max-width: 300px;
+  margin: auto;
+}
+
+footer {
+  padding: 20px;
+  font-size: 14px;
+  opacity: .7;
+}
