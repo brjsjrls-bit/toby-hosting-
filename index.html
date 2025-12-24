@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Toby Bot Hosting</title>
-  <meta name="description" content="Toby Bot Hosting أفضل استضافة بوتات ديسكورد سريعة وآمنة">
+  <meta name="description" content="Toby Bot Hosting - استضافة بوتات ديسكورد مجانية مع لوحة تحكم كاملة">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +12,8 @@
 <!-- HERO -->
 <header class="hero">
   <h1>🤖 Toby Bot Hosting</h1>
-  <p>استضافة بوتات ديسكورد • سريعة • مستقرة • مجانية</p>
-  <a href="#plans" class="btn">ابدأ الآن</a>
+  <p>استضافة بوتات ديسكورد • كل المميزات • مجاني بالكامل</p>
+  <a href="#dashboard" class="btn">افتح لوحة التحكم</a>
 </header>
 
 <!-- FEATURES -->
@@ -22,19 +22,49 @@
   <div>🛡️ حماية قوية</div>
   <div>🌍 تشغيل 24/7</div>
   <div>💻 دعم Node.js</div>
+  <div>📁 رفع ملفات البوت</div>
+  <div>🔧 تشغيل وإيقاف البوت</div>
 </section>
 
-<!-- PLANS -->
+<!-- SINGLE PLAN -->
 <section id="plans" class="plans">
-  <h2>📦 الباقات</h2>
-
-  <div class="card">
-    <h3>Free</h3>
-    <p>512MB RAM</p>
-    <p>Bot واحد</p>
-    <span>مجاني</span>
+  <div class="card full">
+    <h3>💎 All-In-One Plan</h3>
+    <p>4GB RAM</p>
+    <p>بوتات غير محدودة</p>
+    <p>لوحة تحكم كاملة</p>
+    <span class="price">مجاني بالكامل</span>
+    <a href="#dashboard" class="btn">افتح لوحة التحكم</a>
   </div>
+</section>
 
+<!-- DASHBOARD -->
+<section id="dashboard" class="dashboard">
+  <h2>📊 لوحة التحكم</h2>
+  <div class="dashboard-container">
+    <div class="dashboard-card">
+      <h3>رفع ملفات البوت</h3>
+      <input type="file" id="uploadBot" />
+      <button onclick="uploadBot()">رفع</button>
+    </div>
+    <div class="dashboard-card">
+      <h3>تشغيل البوت</h3>
+      <button onclick="startBot()">تشغيل</button>
+    </div>
+    <div class="dashboard-card">
+      <h3>إيقاف البوت</h3>
+      <button onclick="stopBot()">إيقاف</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Toby Bot Hosting — All Rights Reserved
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
   <div class="card premium">
     <h3>Premium</h3>
     <p>2GB RAM</p>
@@ -56,7 +86,7 @@
 <!-- CONTACT -->
 <section class="contact">
   <h2>📞 تواصل معنا</h2>
-  <p>Discord: <b>Toby#0001</b></p>
+  <p>Discord: <b>cursetoby#</b></p>
 </section>
 
 <footer>
