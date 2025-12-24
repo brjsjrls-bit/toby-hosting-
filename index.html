@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>Toby Bot Hosting</title>
-  <meta name="description" content="Toby Bot Hosting - استضافة بوتات ديسكورد مجانية مع لوحة تحكم كاملة">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>لوحة التحكم 24/7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="login-container">
+        <h2>تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="اسم المستخدم" required>
+            <input type="password" id="password" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
 
-<!-- HERO -->
-<header class="hero">
-  <h1>🤖 Toby Bot Hosting</h1>
-  <p>استضافة بوتات ديسكورد • كل المميزات • مجاني بالكامل</p>
-  <a href="#dashboard" class="btn">افتح لوحة التحكم</a>
-</header>
-
-<!-- FEATURES -->
-<section class="features">
-  <div>⚡ سرعة عالية</div>
-  <div>🛡️ حماية قوية</div>
-  <div>🌍 تشغيل 24/7</div>
-  <div>💻 دعم Node.js</div>
-  <div>📁 رفع ملفات البوت</div>
-  <div>🔧 تشغيل وإيقاف البوت</div>
-</section>
-
-<!-- SINGLE PLAN -->
-<section id="plans" class="plans">
-  <div class="card full">
-    <h3>💎 All-In-One Plan</h3>
-    <p>4GB RAM</p>
-    <p>بوتات غير محدودة</p>
-    <p>لوحة تحكم كاملة</p>
-    <span class="price">مجاني بالكامل</span>
-    <a href="#dashboard" class="btn">افتح لوحة التحكم</a>
+    <div id="dashboard-container" style="display: none;">
+        <header>
+            <h1>لوحة التحكم</h1>
+            <button id="logout-btn">تسجيل الخروج</button>
+        </header>
+        <main>
+            <section class="status-section">
+                <h2>حالة النظام</h2>
+                <div id="status-indicator" class="status-online">يعمل 24/7 ✅</div>
+                <div id="uptime"></div>
+            </section>
+            <section class="users-section">
+                <h2>إدارة المستخدمين</h2>
+                <ul id="users-list">
+                    <!-- يتم ملء المستخدمين بكود جافاسكريبت -->
+                </ul>
+                <form id="add-user-form">
+                    <input type="text" id="new-user" placeholder="إسم جديد">
+                    <button type="submit">إضافة مستخدم</button>
+                </form>
+            </section>
+            <section class="upload-section">
+                <h2>رفع ملف (وهمي)</h2>
+                <form id="upload-form">
+                    <input type="file" id="file-input">
+                    <button type="submit">رفع</button>
+                </form>
+                <div id="upload-message"></div>
+            </section>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>    <a href="#dashboard" class="btn">افتح لوحة التحكم</a>
   </div>
 </section>
 
